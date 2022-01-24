@@ -515,7 +515,7 @@ input:-webkit-autofill:active {
 
 .menu-burger{
   height: 100vh;
-  width:620px;
+  width:80%;
   position: absolute;
   z-index: 3;
   top:0px;
@@ -623,12 +623,13 @@ input:-webkit-autofill:active {
    margin-right: 0px;
  }
  .portfolio-img{
-   margin: 0 auto !important;
+   margin: 0 auto 25px !important;
+
  }.price-items{
    flex-wrap: wrap;
  }
  .price-item{
-   margin:0 auto !important
+   margin:0 auto 50px !important
   }
   .contacts-container{
     max-height: 600px;
@@ -642,6 +643,17 @@ input:-webkit-autofill:active {
   .contact-item-tel,
   .contact-item-msg{
     opacity:0.5;
+  }
+  .footer{
+    height: 190px;
+  }
+  .w_50{
+    margin: 0 auto;
+    flex-direction: column;
+    width:50%;
+  }
+  .social-items{
+    padding-top: 32px;
   }
 }
 @media (max-width: 480px) {
