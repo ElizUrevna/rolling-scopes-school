@@ -34,7 +34,7 @@ body {
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -513,4 +513,143 @@ input:-webkit-autofill:active {
   margin-right: 0;
 }
 
+.menu-burger{
+  height: 100vh;
+  width:620px;
+  position: absolute;
+  z-index: 3;
+  top:0px;
+  left:auto;
+  right:-100%;
+  background-color:#000;
+}
+.menu-burger_close-btn{
+  width:44px;
+  height: 45px;
+  overflow:hidden;
+  position: relative;
+  z-index: 10;
+  display:flex;
+  margin: 23px 67px 64px auto;
+}
+.menu-burger_close-btn-line{
+  z-index: 3;
+  top:20px;
+  left:0;
+  background-color:#fff;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  transform: rotate(45deg);
+}
+.menu-burger_close-btn-line:last-child{
+  transform: rotate(-45deg);
+}
+.buger-links{
+  margin-left: 127px;
+}
+.buger-links-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.buger-link-item{
+  padding-bottom: 16px;
+}
+.buger-link{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 73px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.burger-ico{
+  width:50px;
+  background-color:#000;
+}
 
+.burger-ico-line{
+  height: 2px;
+  width: 100%;
+  margin-bottom: 11px;
+  background-color: #fff;
+}
+
+.overflow-hide{
+  overflow: hidden;
+}
+.hide{
+  display:none; 
+}
+@media (max-width: 1440px) {
+ 
+}
+@media (max-width: 768px) {
+  .element-hide{
+   visibility: hidden !important;
+  }
+  .hide{
+    display: block !important;
+  }
+ .container{
+  max-width: 756px !important;
+  padding: 0 !important;
+ }
+ .header-container {
+  padding: 0 30px;
+ }
+ .hero-container{
+   height: 590px;
+ }
+ .open{
+   right: 0;
+   transition: 0.5s;
+ }
+ .skills-items{
+   width: calc(100%-40px) !important;
+   margin: 0 auto;
+ }
+ .skill-item{
+   margin-right: 0px;
+ }
+ .portfolio-btns{
+   width:445px;
+   flex-wrap: wrap;
+ }
+ .portfolio-btn{
+   margin-right: 0px;
+ }
+ .portfolio-img{
+   margin: 0 auto !important;
+ }.price-items{
+   flex-wrap: wrap;
+ }
+ .price-item{
+   margin:0 auto !important
+  }
+  .contacts-container{
+    max-height: 600px;
+    background-size:auto;
+    background-position:center left 37%;
+  }
+  .contacts-item{
+    right: 159px;
+  }
+  .contact-item-email,
+  .contact-item-tel,
+  .contact-item-msg{
+    opacity:0.5;
+  }
+}
+@media (max-width: 480px) {
+ 
+}
+@media (max-width: 620px) {
+ 
+}
+@media (max-width: 320px) {
+ 
+}
